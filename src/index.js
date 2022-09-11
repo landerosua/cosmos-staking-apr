@@ -66,8 +66,8 @@ async function start() {
       const nominalAPR = calculateNominalAPR(params);
       const actualAPR = calculateRealAPR(params, nominalAPR, blocksYearReal);
 
-      console.log(`Nominal APR: ${nominalAPR * 100} %`);
-      console.log(`RealTime APR: ${actualAPR * 100} %`);
+      console.log(`Nominal_APR: ${nominalAPR}`);
+      console.log(`RealTime_APR: ${actualAPR}`);
   } catch (error) {
       console.log(error);
       return process.exit(-1);
